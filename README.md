@@ -7,8 +7,6 @@
 <a href="./LICENSE.txt">
 <img src="https://img.shields.io/badge/license-MIT-lightgrey.svg" alt="License">
 </a>
-</p>
-<p align="center">
 <a href="https://travis-ci.org/SwiftyVK/SwiftyVK">
 <img src="https://travis-ci.org/ichina/ChatPlatform.svg?branch=master" alt="Build status">
 </a>
