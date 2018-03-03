@@ -14,7 +14,7 @@ jobs:
       if: NOT (tag IS present)
       env: JOB=iOS Tests
       script:
-        - travis_retry xcodebuild -workspace SwiftyVK.xcworkspace -scheme SwiftyVK_iOS -destination "platform=iOS Simulator,name=iPhone 7 Plus" -enableCodeCoverage YES CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" test | xcpretty -f `xcpretty-travis-formatter`
+        - travis_retry xcodebuild -workspace ChatPlatform.xcworkspace -scheme ChatPlatformApp -destination "platform=iOS Simulator,name=iPhone 7 Plus" -enableCodeCoverage YES CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" test | xcpretty -f `xcpretty-travis-formatter`
       after_success:
         - bash <(curl -s https://codecov.io/bash)
 # ==============================================================================
